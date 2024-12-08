@@ -1,0 +1,137 @@
+[
+    {
+        "id": "1",
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "description": "A novel about racism and injustice in the American South.",
+        "available": false,
+        "return_date": "2024-12-22",
+        "photo_url": "https://covers.openlibrary.org/b/id/8228691-L.jpg"
+    },
+    {
+        "id": "2",
+        "title": "1984",
+        "author": "George Orwell",
+        "description": "A dystopian novel about totalitarianism and surveillance.",
+        "available": true,
+        "return_date": null,
+        "photo_url": "https://covers.openlibrary.org/b/id/8228691-L.jpg"
+    },
+    {
+        "id": "3",
+        "title": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "description": "A romantic novel about manners and marriage.",
+        "available": true,
+        "return_date": null,
+        "photo_url": "https://covers.openlibrary.org/b/id/8091016-L.jpg"
+    },
+    {
+        "id": "4",
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "description": "A story about the American dream and disillusionment.",
+        "available": true,
+        "return_date": null,
+        "photo_url": "https://covers.openlibrary.org/b/id/10481158-L.jpg"
+    },
+    {
+        "id": "5",
+        "title": "Moby-Dick",
+        "author": "Herman Melville",
+        "description": "A whaling adventure with deep philosophical themes.",
+        "available": true,
+        "return_date": null,
+        "photo_url": "https://covers.openlibrary.org/b/id/5552481-L.jpg"
+    },
+    {
+        "id": "6",
+        "title": "War and Peace",
+        "author": "Leo Tolstoy",
+        "description": "A historical epic about Napoleon's invasion of Russia.",
+        "available": true,
+        "return_date": null,
+        "photo_url": "https://covers.openlibrary.org/b/id/9871546-L.jpg"
+    },
+    {
+        "id": "7",
+        "title": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "description": "A novel about teenage angst and alienation.",
+        "available": false,
+        "return_date": "2024-12-6",
+        "photo_url": "https://covers.openlibrary.org/b/id/8221256-L.jpg"
+    },
+    {
+        "id": "8",
+        "title": "Brave New World",
+        "author": "Aldous Huxley",
+        "description": "A dystopian novel about a genetically engineered society.",
+        "available": true,
+        "return_date": null,
+        "photo_url": "https://covers.openlibrary.org/b/id/7232171-L.jpg"
+    },
+    {
+        "id": "9",
+        "title": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "description": "A fantasy adventure about a hobbit's journey to recover treasure.",
+        "available": true,
+        "return_date": null,
+        "photo_url": "https://covers.openlibrary.org/b/id/6979862-L.jpg"
+    },
+    {
+        "id": "10",
+        "title": "Fahrenheit 451",
+        "author": "Ray Bradbury",
+        "description": "A dystopian novel about censorship and book burning.",
+        "available": true,
+        "return_date": null,
+        "photo_url": "https://covers.openlibrary.org/b/id/6965113-L.jpg"
+    },
+    {
+        "id": "11",
+        "title": "Crime and Punishment",
+        "author": "Fyodor Dostoevsky",
+        "description": "A psychological novel about guilt and redemption.",
+        "available": true,
+        "return_date": null,
+        "photo_url": "https://covers.openlibrary.org/b/id/7852296-L.jpg"
+    },
+    {
+        "id": "12",
+        "title": "The Odyssey",
+        "author": "Homer",
+        "description": "An epic poem about the adventures of Odysseus.",
+        "available": true,
+        "return_date": null,
+        "photo_url": "https://covers.openlibrary.org/b/id/10124759-L.jpg"
+    },
+    {
+        "id": "13",
+        "title": "Jane Eyre",
+        "author": "Charlotte Bront",
+        "description": "A novel about love, independence, and resilience.",
+        "available": true,
+        "return_date": null,
+        "photo_url": "https://covers.openlibrary.org/b/id/8221971-L.jpg"
+    },
+    {
+        "id": "14",
+        "title": "Frankenstein",
+        "author": "Mary Shelley",
+        "description": "A gothic novel about creation and responsibility.",
+        "available": true,
+        "return_date": null,
+        "photo_url": "https://covers.openlibrary.org/b/id/8228692-L.jpg"
+    },
+    {
+        "id": "15",
+        "title": "Dracula",
+        "author": "Bram Stoker",
+        "description": "A gothic horror novel about a vampire count.",
+        "available": true,
+        "return_date": null,
+        "photo_url": "https://covers.openlibrary.org/b/id/8228598-L.jpg"
+    }
+]

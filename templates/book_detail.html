@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+    <div align="center">
+        <h1>{{ book.title }}</h1>
+        <img src="{{ book.photo_url }}" alt="Book cover">
+        <p><strong>Author:</strong> {{ book.author }}</p>
+        <p><strong>Description:</strong> {{ book.description }}</p>
+        <p><strong>Available:</strong> {{ 'Yes' if book.available else 'No' }}</p>
+        {% if session.get("role") == "regular" %}
+            {% if book.available %}
+                <form action="/add_to_inventory/{{ book.id }}" method="post">
+                    <button type="submit">Add to Inventory</button>
+                </form>
+            {% else %}
+                <form action="/remove_from_inventory/{{ book.id }}" method="post">
+                    <button type="submit">Remove from Inventory</button>
+                </form>
+            {% endif %}
+        {% endif %}
+        {% if session.get("role") == "admin" %}
+            <form action="/delete_book/{{ book.id }}" method="post">
+                <button type="submit" class="btn btn-outline-primary">Delete Book</button>
+                <a href="/update_book/{{ book.id }}" class="btn btn-outline-primary">Update Book</a>
+            </form>
+        {% endif %}
+    </div>
+{% endblock %}

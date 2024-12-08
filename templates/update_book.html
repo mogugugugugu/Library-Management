@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-5">
+    <div class="card shadow-sm p-4">
+        <h1 class="mb-4">Update Book</h1>
+        <form action="/update_book/{{ book.id }}" method="post">
+            <div class="mb-3">
+                <label for="title" class="form-label">Book Title</label>
+                <input type="text" name="title" id="title" class="form-control" value="{{ book.title }}" required>
+            </div>
+            <div class="mb-3">
+                <label for="author" class="form-label">Author</label>
+                <input type="text" name="author" id="author" class="form-control" value="{{ book.author }}" required>
+            </div>
+            <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <textarea name="description" id="description" class="form-control" rows="4" required>{{ book.description }}</textarea>
+            </div>
+            <div class="mb-3">
+                <label for="photo_url" class="form-label">Photo URL</label>
+                <input type="url" name="photo_url" id="photo_url" class="form-control" value="{{ book.photo_url }}" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Update Book</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

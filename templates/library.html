@@ -1,0 +1,25 @@
+
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-4">
+    <h1>Library</h1>
+    {% if books %}
+        <div class="row">
+            {% for book in books %}
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img class="card-img-top" src="{{ book.photo_url }}" alt="{{ book.title }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ book.title }}</h5>
+                        <p class="card-text">Author: {{ book.author }}</p>
+                        <a href="/book/{{ book.id }}" class="btn btn-primary btn-sm">View Details</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p>No books available.</p>
+    {% endif %}
+</div>
+{% endblock %}

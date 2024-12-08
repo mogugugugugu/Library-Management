@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Admin Dashboard</h1>
+
+{% if error_message %}
+<div class="alert alert-danger" role="alert">
+    {{ error_message }}
+</div>
+{% endif %}
+
+<div style="margin-bottom: 50px;">
+    <h2>Book Availability</h2>
+    <p>This chart shows the distribution of available and unavailable books in the library.</p>
+    <div style="width: 400px; height: 400px; margin: auto;">
+        <canvas id="bookAvailabilityChart"></canvas>
+    </div>
+</div>
+
+<div>
+    <h2>Overdue Books by Month</h2>
+    <p>This chart displays the number of overdue books for each month.</p>
+    <div style="width: 600px; height: 300px; margin: auto;">
+        <canvas id="overdueBooksChart"></canvas>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    // Pie chart configuration
+    const pieCtx = document.getElementById('bookAvailabilityChart').getContext('2d');
+    new Chart(pieCtx, {
+        type: 'pie',
+        data: {
+            labels: ['Available', 'Unavailable'],
+            datasets: [{
+                data: [{{ pie_chart_data['available'] }}, {{ pie_chart_data['unavailable'] }}],
+                backgroundColor: ['#36a2eb', '#ff6384']
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+        }
+    });
+
+    // Bar chart configuration
+    const barCtx = document.getElementById('overdueBooksChart').getContext('2d');
+    new Chart(barCtx, {
+        type: 'bar',
+        data: {
+            labels: {{ bar_chart_data['months'] | tojson }},
+            datasets: [{
+                label: 'Overdue Books',
+                data: {{ bar_chart_data['overdue_counts'] | tojson }},
+                backgroundColor: '#36a2eb'
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Month'
+                    }
+                },
+                y: {
+                    title: {
+                        display: true,
+                        text: 'Number of Overdue Books'
+                    },
+                    ticks: {
+                        stepSize: 1, // Ensure the tick step is 1
+                        beginAtZero: true // Ensure it starts at 0
+                    }
+                }
+            }
+        }
+    });
+</script>
+{% endblock %}

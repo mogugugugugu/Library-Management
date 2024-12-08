@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>User Dashboard</h1>
+
+{% if error_message %}
+<div class="alert alert-danger" role="alert">
+    {{ error_message }}
+</div>
+{% endif %}
+
+<div style="margin-bottom: 50px;">
+    <h2>Your Inventory Status</h2>
+    <p>This chart displays the number of books in your inventory that are overdue and not overdue.</p>
+    <div style="width: 400px; height: 400px; margin: auto;">
+        <canvas id="userInventoryChart"></canvas>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const ctx = document.getElementById('userInventoryChart').getContext('2d');
+    new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: ['Overdue', 'Not Overdue'],
+            datasets: [{
+                data: [{{ pie_chart_data['overdue'] }}, {{ pie_chart_data['not_overdue'] }}],
+                backgroundColor: ['#ff6384', '#36a2eb']
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+        }
+    });
+</script>
+{% endblock %}

@@ -1,0 +1,23 @@
+[
+    {
+        "username": "admin",
+        "password": "admin123",
+        "inventory": [],
+        "role": "admin"
+    },
+    {
+        "username": "john_doe",
+        "password": "password123",
+        "inventory": [
+            "7",
+            "1"
+        ],
+        "role": "regular"
+    },
+    {
+        "username": "jane_smith",
+        "password": "mypassword",
+        "inventory": [],
+        "role": "regular"
+    }
+]

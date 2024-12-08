@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-5">
+    <div class="card shadow-sm p-4">
+        <h1 class="mb-4">Add New Book</h1>
+        <form action="/add_book" method="post">
+            <div class="mb-3">
+                <label for="title" class="form-label">Book Title</label>
+                <input type="text" name="title" id="title" class="form-control" placeholder="Enter book title" required>
+            </div>
+            <div class="mb-3">
+                <label for="author" class="form-label">Author</label>
+                <input type="text" name="author" id="author" class="form-control" placeholder="Enter author name" required>
+            </div>
+            <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <textarea name="description" id="description" class="form-control" placeholder="Enter book description" rows="4" required></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="photo_url" class="form-label">Photo URL</label>
+                <input type="url" name="photo_url" id="photo_url" class="form-control" placeholder="Enter cover photo URL" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Add Book</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
