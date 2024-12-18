@@ -1,11 +1,13 @@
 
 import json
 from datetime import datetime
+import spacy
 
 from entities.book import Book
 from repositories.user_repository import UserRepository
 
 class LibraryRepository:
+
     def __init__(self, file_path="data/books.json"):
         self.file_path = file_path
         self.user_repo = UserRepository()
@@ -73,3 +75,40 @@ class LibraryRepository:
 
         return overdue_books, not_overdue_books
 
+    def recommend_book(self, user_inventory):
+        if not user_inventory:
+            # If the inventory is empty, recommend any available book
+            return next((book for book in self.get_all_books() if book.available), None)
+
+        try:
+
+            nlp = spacy.load("en_core_web_sm")
+
+            # Get descriptions of books in the user's inventory
+            inventory_books = [self.get_book_by_id(book_id) for book_id in user_inventory]
+            inventory_descriptions = [book.description for book in inventory_books if book]
+
+            # Compute NLP embeddings for descriptions in the inventory
+            inventory_docs = [nlp(description) for description in inventory_descriptions]
+
+            # Find the best match for available books
+            all_books = self.get_all_books()
+            recommended_book = None
+            max_similarity = 0
+
+            for book in all_books:
+                if book.id in user_inventory or not book.available:
+                    continue  # Skip books already in the user's inventory or unavailable
+
+                # Compute the semantic similarity between this book's description and inventory
+                book_doc = nlp(book.description)
+                similarity = max(book_doc.similarity(inv_doc) for inv_doc in inventory_docs)
+
+                # Track the most similar book
+                if similarity > max_similarity:
+                    recommended_book = book
+                    max_similarity = similarity
+
+            return recommended_book
+        except Exception as e:
+            return None

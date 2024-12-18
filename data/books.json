@@ -1,137 +1,182 @@
 [
     {
         "id": "1",
-        "title": "To Kill a Mockingbird",
-        "author": "Harper Lee",
-        "description": "A novel about racism and injustice in the American South.",
+        "title": "The Alchemist",
+        "author": "Paulo Coelho",
+        "description": "A philosophical tale about a shepherd named Santiago and his journey to discover his personal legend.",
         "available": false,
-        "return_date": "2024-12-22",
-        "photo_url": "https://covers.openlibrary.org/b/id/8228691-L.jpg"
+        "return_date": "2025-01-01",
+        "photo_url": "https://covers.openlibrary.org/b/id/48240-L.jpg"
     },
     {
         "id": "2",
-        "title": "1984",
-        "author": "George Orwell",
-        "description": "A dystopian novel about totalitarianism and surveillance.",
-        "available": true,
-        "return_date": null,
-        "photo_url": "https://covers.openlibrary.org/b/id/8228691-L.jpg"
+        "title": "The Kite Runner",
+        "author": "Khaled Hosseini",
+        "description": "A story of friendship, betrayal, and redemption set against the backdrop of Afghanistan's tumultuous history.",
+        "available": false,
+        "return_date": "2025-01-01",
+        "photo_url": "https://covers.openlibrary.org/b/id/9248224-L.jpg"
     },
     {
         "id": "3",
-        "title": "Pride and Prejudice",
-        "author": "Jane Austen",
-        "description": "A romantic novel about manners and marriage.",
-        "available": true,
-        "return_date": null,
-        "photo_url": "https://covers.openlibrary.org/b/id/8091016-L.jpg"
+        "title": "The Road",
+        "author": "Cormac McCarthy",
+        "description": "A post-apocalyptic journey of survival and love between a father and his son.",
+        "available": false,
+        "return_date": "2025-01-01",
+        "photo_url": "https://covers.openlibrary.org/b/id/198120-L.jpg"
     },
     {
         "id": "4",
-        "title": "The Great Gatsby",
-        "author": "F. Scott Fitzgerald",
-        "description": "A story about the American dream and disillusionment.",
-        "available": true,
-        "return_date": null,
-        "photo_url": "https://covers.openlibrary.org/b/id/10481158-L.jpg"
+        "title": "Life of Pi",
+        "author": "Yann Martel",
+        "description": "The incredible survival story of a boy stranded on a lifeboat with a Bengal tiger.",
+        "available": false,
+        "return_date": "2024-11-01",
+        "photo_url": "https://covers.openlibrary.org/b/id/12840573-L.jpg"
     },
     {
         "id": "5",
-        "title": "Moby-Dick",
-        "author": "Herman Melville",
-        "description": "A whaling adventure with deep philosophical themes.",
+        "title": "The Book Thief",
+        "author": "Markus Zusak",
+        "description": "A moving tale of a young girl in Nazi Germany who finds solace in stealing books and sharing them with others.",
         "available": true,
         "return_date": null,
-        "photo_url": "https://covers.openlibrary.org/b/id/5552481-L.jpg"
+        "photo_url": "https://covers.openlibrary.org/b/id/8153054-L.jpg"
     },
     {
         "id": "6",
-        "title": "War and Peace",
-        "author": "Leo Tolstoy",
-        "description": "A historical epic about Napoleon's invasion of Russia.",
+        "title": "A Thousand Splendid Suns",
+        "author": "Khaled Hosseini",
+        "description": "The harrowing yet hopeful story of two women in Afghanistan brought together by fate and hardship.",
         "available": true,
         "return_date": null,
-        "photo_url": "https://covers.openlibrary.org/b/id/9871546-L.jpg"
+        "photo_url": "https://covers.openlibrary.org/b/id/8579790-L.jpg"
     },
     {
         "id": "7",
-        "title": "The Catcher in the Rye",
-        "author": "J.D. Salinger",
-        "description": "A novel about teenage angst and alienation.",
-        "available": false,
-        "return_date": "2024-12-6",
-        "photo_url": "https://covers.openlibrary.org/b/id/8221256-L.jpg"
+        "title": "The Hunger Games",
+        "author": "Suzanne Collins",
+        "description": "A dystopian tale of a young girl fighting for survival in a deadly televised competition.",
+        "available": true,
+        "return_date": null,
+        "photo_url": "https://covers.openlibrary.org/b/id/12646537-L.jpg"
     },
     {
         "id": "8",
-        "title": "Brave New World",
-        "author": "Aldous Huxley",
-        "description": "A dystopian novel about a genetically engineered society.",
+        "title": "Dune",
+        "author": "Frank Herbert",
+        "description": "A science fiction epic of politics, betrayal, and survival on the desert planet of Arrakis.",
         "available": true,
         "return_date": null,
-        "photo_url": "https://covers.openlibrary.org/b/id/7232171-L.jpg"
+        "photo_url": "https://covers.openlibrary.org/b/id/11481354-L.jpg"
     },
     {
         "id": "9",
-        "title": "The Hobbit",
-        "author": "J.R.R. Tolkien",
-        "description": "A fantasy adventure about a hobbit's journey to recover treasure.",
+        "title": "The Shining",
+        "author": "Stephen King",
+        "description": "A chilling story about a haunted hotel and a family unraveling under its influence.",
         "available": true,
         "return_date": null,
-        "photo_url": "https://covers.openlibrary.org/b/id/6979862-L.jpg"
+        "photo_url": "https://covers.openlibrary.org/b/id/12376585-L.jpg"
     },
     {
         "id": "10",
-        "title": "Fahrenheit 451",
-        "author": "Ray Bradbury",
-        "description": "A dystopian novel about censorship and book burning.",
+        "title": "The Handmaid's Tale",
+        "author": "Margaret Atwood",
+        "description": "A dystopian novel about a woman's struggle for freedom in a totalitarian society that controls reproduction.",
         "available": true,
         "return_date": null,
-        "photo_url": "https://covers.openlibrary.org/b/id/6965113-L.jpg"
+        "photo_url": "https://covers.openlibrary.org/b/id/8231851-L.jpg"
     },
     {
         "id": "11",
-        "title": "Crime and Punishment",
-        "author": "Fyodor Dostoevsky",
-        "description": "A psychological novel about guilt and redemption.",
-        "available": true,
-        "return_date": null,
-        "photo_url": "https://covers.openlibrary.org/b/id/7852296-L.jpg"
+        "title": "Good Omens",
+        "author": "Neil Gaiman and Terry Pratchett",
+        "description": "A comedic tale of an angel and a demon teaming up to prevent the apocalypse.",
+        "available": false,
+        "return_date": "2024-12-01",
+        "photo_url": "https://via.placeholder.com/150"
     },
     {
         "id": "12",
-        "title": "The Odyssey",
-        "author": "Homer",
-        "description": "An epic poem about the adventures of Odysseus.",
+        "title": "The Picture of Dorian Gray",
+        "author": "Oscar Wilde",
+        "description": "A gothic novel exploring vanity, morality, and the price of eternal youth.",
         "available": true,
         "return_date": null,
-        "photo_url": "https://covers.openlibrary.org/b/id/10124759-L.jpg"
+        "photo_url": "https://covers.openlibrary.org/b/id/14314858-L.jpg"
     },
     {
         "id": "13",
-        "title": "Jane Eyre",
-        "author": "Charlotte Bront",
-        "description": "A novel about love, independence, and resilience.",
-        "available": true,
-        "return_date": null,
-        "photo_url": "https://covers.openlibrary.org/b/id/8221971-L.jpg"
+        "title": "The Bell Jar",
+        "author": "Sylvia Plath",
+        "description": "A semi-autobiographical novel about a young woman's struggle with mental illness and identity.",
+        "available": false,
+        "return_date": "2024-12-12",
+        "photo_url": "https://covers.openlibrary.org/b/id/8477115-L.jpg"
     },
     {
         "id": "14",
-        "title": "Frankenstein",
-        "author": "Mary Shelley",
-        "description": "A gothic novel about creation and responsibility.",
+        "title": "The Secret Garden",
+        "author": "Frances Hodgson Burnett",
+        "description": "A classic tale of friendship and healing through the discovery of a hidden garden.",
         "available": true,
         "return_date": null,
-        "photo_url": "https://covers.openlibrary.org/b/id/8228692-L.jpg"
+        "photo_url": "https://covers.openlibrary.org/b/id/12622062-L.jpg"
     },
     {
         "id": "15",
-        "title": "Dracula",
-        "author": "Bram Stoker",
-        "description": "A gothic horror novel about a vampire count.",
+        "title": "Animal Farm",
+        "author": "George Orwell",
+        "description": "A political allegory that uses farm animals to explore themes of revolution and totalitarianism.",
         "available": true,
         "return_date": null,
-        "photo_url": "https://covers.openlibrary.org/b/id/8228598-L.jpg"
+        "photo_url": "https://covers.openlibrary.org/b/id/11261770-L.jpg"
+    },
+    {
+        "id": "16",
+        "title": "Rebecca",
+        "author": "Daphne du Maurier",
+        "description": "A gothic mystery about love, jealousy, and secrets in a grand estate.",
+        "available": true,
+        "return_date": null,
+        "photo_url": "https://covers.openlibrary.org/b/id/8238729-L.jpg"
+    },
+    {
+        "id": "17",
+        "title": "Watership Down",
+        "author": "Richard Adams",
+        "description": "An epic adventure of survival as a group of rabbits search for a new home.",
+        "available": false,
+        "return_date": "2025-01-01",
+        "photo_url": "https://covers.openlibrary.org/b/id/6450196-L.jpg"
+    },
+    {
+        "id": "18",
+        "title": "The Giver",
+        "author": "Lois Lowry",
+        "description": "A dystopian novel about a boy who discovers the dark secrets behind his seemingly utopian society.",
+        "available": true,
+        "return_date": null,
+        "photo_url": "https://covers.openlibrary.org/b/id/8352502-L.jpg"
+    },
+    {
+        "id": "19",
+        "title": "The Little Prince",
+        "author": "Antoine de Saint",
+        "description": "A poetic story about a young prince's journey to understand love, loss, and human nature.",
+        "available": true,
+        "return_date": null,
+        "photo_url": "https://covers.openlibrary.org/b/id/10746692-L.jpg"
+    },
+    {
+        "id": "20",
+        "title": "Beloved",
+        "author": "Toni Morrison",
+        "description": "A haunting novel about a woman confronting her past as a slave and its impact on her family.",
+        "available": false,
+        "return_date": "2025-01-01",
+        "photo_url": "https://covers.openlibrary.org/b/id/8261367-L.jpg"
     }
 ]
