@@ -9,15 +9,22 @@
         "username": "john_doe",
         "password": "password123",
         "inventory": [
-            "7",
-            "1"
+            "1",
+            "17",
+            "4",
+            "2"
         ],
         "role": "regular"
     },
     {
         "username": "jane_smith",
         "password": "mypassword",
-        "inventory": [],
+        "inventory": [
+            "3",
+            "13",
+            "20",
+            "11"
+        ],
         "role": "regular"
     }
 ]

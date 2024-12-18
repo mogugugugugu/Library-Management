@@ -205,7 +205,6 @@ def user_dashboard():
         return redirect("/")  # Redirect non-regular users
 
     try:
-        # Fetch the current user's inventory
         username = session["username"]
         user = next((u for u in user_repo.get_all_users() if u.username == username), None)
 
@@ -214,7 +213,7 @@ def user_dashboard():
 
         inventory = user.inventory  # List of book IDs in the user's inventory
 
-        # Get overdue and not overdue books using LibraryRepository
+        # Get overdue and not overdue books
         overdue_books, not_overdue_books = library_repo.get_user_inventory_overdue_status(inventory)
 
         # Prepare data for the pie chart
@@ -222,15 +221,19 @@ def user_dashboard():
         not_overdue_count = len(not_overdue_books)
         pie_chart_data = {"overdue": overdue_count, "not_overdue": not_overdue_count}
 
+        # Get book recommendation
+        recommended_book = library_repo.recommend_book(inventory)
+
         return render_template(
             "user_dashboard.html",
             pie_chart_data=pie_chart_data,
+            recommended_book=recommended_book,
         )
     except Exception as e:
         logging.error(f"Error in user_dashboard: {e}")
         return render_template(
             "user_dashboard.html",
             pie_chart_data={"overdue": 0, "not_overdue": 0},
+            recommended_book=None,
             error_message="An error occurred while loading the dashboard. Please try again later.",
         )
-

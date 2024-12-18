@@ -34,4 +34,22 @@
         }
     });
 </script>
+
+    {% if recommended_book %}
+        <div class="recommendation">
+            <h3>Recommended Book for You</h3>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img class="card-img-top" src="{{ recommended_book['photo_url'] }}" alt="{{ recommended_book['title'] }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ recommended_book['title'] }}</h5>
+                        <p class="card-text">Author: {{ recommended_book['author'] }}</p>
+                        <a href="/book/{{ recommended_book['id'] }}" class="btn btn-primary btn-sm">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% else %}
+        <p>No recommendations available at the moment.</p>
+    {% endif %}
 {% endblock %}

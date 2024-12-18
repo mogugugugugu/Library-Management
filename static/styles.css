@@ -19,6 +19,13 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
+.bg-danger {
+    background-color: #f8d7da !important;
+}
+
+.text-white {
+    color: #721c24 !important;
+}
 button {
     background-color: #007bff;
     color: white;

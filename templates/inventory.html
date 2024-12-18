@@ -1,4 +1,3 @@
-
 {% extends "base.html" %}
 {% block content %}
 {% if session.get("role") == "regular" %}
@@ -13,6 +12,7 @@
                     <div class="card-body">
                         <h5 class="card-title">{{ book['title'] }}</h5>
                         <p class="card-text">Author: {{ book['author'] }}</p>
+                        <p class="card-text">Return Date: {{ book['return_date'] }}</p>
                         <a href="/book/{{ book['id'] }}" class="btn btn-primary btn-sm">View Details</a>
                     </div>
                 </div>
